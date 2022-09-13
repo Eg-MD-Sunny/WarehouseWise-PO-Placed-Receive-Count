@@ -1,9 +1,9 @@
 -- Summary_Received
 
-select  w.id WarehouseID,
-		w.name Warehouse,
-		count(distinct po.vendorid) VendorCount,
-		count(distinct t.purchaseorderid) POCount 
+select  w.id [WarehouseID],
+		w.name [Warehouse],
+		count(distinct po.vendorid) [VendorCount],
+		count(distinct t.purchaseorderid) [POCount] 
 
 from thing t
 join PurchaseOrder po on po.id=t.PurchaseOrderId
